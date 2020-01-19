@@ -23,9 +23,11 @@ namespace url {
 
 class value //: public view
 {
+#if 0
     char* begin_ = nullptr;
     std::size_t* end_ = nullptr;
     std::size_t capacity_ = 0;
+#endif
 
 public:
     value() = default;

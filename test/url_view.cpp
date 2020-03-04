@@ -16,7 +16,7 @@
 namespace boost {
 namespace urls {
 
-class view_test
+class url_view_test
 {
 public:
     test_suite::log_type log;
@@ -418,7 +418,7 @@ public:
     }
 };
 
-TEST_SUITE(view_test, "boost.url.url_view");
+TEST_SUITE(url_view_test, "boost.url.url_view");
 
 } // urls
 } // boost

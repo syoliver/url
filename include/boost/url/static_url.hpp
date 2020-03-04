@@ -7,8 +7,8 @@
 // Official repository: https://github.com/vinniefalco/url
 //
 
-#ifndef BOOST_URL_STATIC_VALUE_HPP
-#define BOOST_URL_STATIC_VALUE_HPP
+#ifndef BOOST_URL_STATIC_URL_HPP
+#define BOOST_URL_STATIC_URL_HPP
 
 #include <boost/url/config.hpp>
 #include <boost/url/url_base.hpp>
@@ -19,7 +19,7 @@ namespace boost {
 namespace urls {
 
 template<std::size_t N>
-class static_value
+class static_url
     : public url_base
 {
     char buf_[N + 1];
@@ -27,21 +27,24 @@ class static_value
 public:
     template<class... Args>
     explicit
-    static_value(Args&&... args)
+    static_url(Args&&... args)
         : url_base(
             std::forward<Args>(args)...)
     {
+        // VFALCO TODO
     }
 
-    static_value(
-        static_value const&) noexcept
+    static_url(
+        static_url const&) noexcept
     {
+        // VFALCO TODO
     }
 
-    static_value&
+    static_url&
     operator=(
-        static_value const&) noexcept
+        static_url const&) noexcept
     {
+        // VFALCO TODO
         return *this;
     }
 };

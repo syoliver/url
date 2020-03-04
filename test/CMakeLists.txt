@@ -30,7 +30,7 @@ add_executable (url-tests
     sandbox.cpp
     scheme.cpp
     static_pool.cpp
-    static_value.cpp
+    static_url.cpp
     url_base.cpp
     url_view.cpp
     value.cpp

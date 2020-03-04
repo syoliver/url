@@ -8,14 +8,14 @@
 //
 
 // Test that header file is self-contained.
-#include <boost/url/static_value.hpp>
+#include <boost/url/static_url.hpp>
 
 #include "test_suite.hpp"
 
 namespace boost {
 namespace urls {
 
-class static_value_test
+class static_url_test
 {
 public:
     //------------------------------------------------------
@@ -26,7 +26,7 @@ public:
     }
 };
 
-TEST_SUITE(static_value_test, "boost.url.static_value");
+TEST_SUITE(static_url_test, "boost.url.static_url");
 
 } // urls
 } // boost

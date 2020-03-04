@@ -33,9 +33,10 @@ add_executable (url-tests
     scheme.cpp
     static_pool.cpp
     static_url.cpp
+    url.cpp
     url_base.cpp
     url_view.cpp
-    value.cpp
+    urls.cpp
 )
 
 add_test(url-tests url-tests)

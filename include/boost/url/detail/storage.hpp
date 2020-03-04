@@ -91,6 +91,19 @@ public:
     }
 };
 
+template<class Allocator>
+struct storage_member
+{
+    alloc_storage<Allocator> st_;
+
+    explicit
+    storage_member(
+        Allocator const& alloc)
+        : st_(alloc)
+    {
+    }
+};
+
 } // detail
 } // urls
 } // boost

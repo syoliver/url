@@ -18,23 +18,8 @@
 namespace boost {
 namespace urls {
 
-namespace detail {
-
-template<class Allocator>
-struct storage_member
-{
-    alloc_storage<Allocator> st_;
-
-    explicit
-    storage_member(
-        Allocator const& alloc)
-        : st_(alloc)
-    {
-    }
-};
-
-} // detail
-
+/** A container for storing a URL.
+*/
 template<class Allocator>
 class basic_url
     : private detail::storage_member<Allocator>
@@ -85,9 +70,6 @@ public:
         return *this;
     }
 };
-
-using value = basic_url<
-    std::allocator<char>>;
 
 } // urls
 } // boost

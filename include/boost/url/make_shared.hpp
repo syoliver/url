@@ -141,10 +141,10 @@ public:
     }
 };
 
-struct shared_view_impl : view
+struct shared_view_impl : url_view
 {
-    shared_view_impl(view const& v)
-        : view(v.cparts(),
+    shared_view_impl(url_view const& v)
+        : url_view(v.cparts(),
             reinterpret_cast<
                 char const*>(this + 1))
     {
@@ -155,9 +155,9 @@ struct shared_view_impl : view
 
 template<
     class Allocator = std::allocator<char>>
-std::shared_ptr<view>
+std::shared_ptr<url_view>
 make_shared(
-    view const& v,
+    url_view const& v,
     Allocator const& alloc = Allocator{})
 {
     using T = detail::shared_view_impl;

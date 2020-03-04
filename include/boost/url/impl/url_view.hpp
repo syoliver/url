@@ -15,7 +15,7 @@ namespace urls {
 
 //----------------------------------------------------------
 
-class view::segments_type::iterator
+class url_view::segments_type::iterator
 {
     friend segments_type;
 
@@ -98,7 +98,7 @@ private:
 
 //----------------------------------------------------------
 
-class view::params_type::iterator
+class url_view::params_type::iterator
 {
     friend params_type;
 
@@ -185,7 +185,7 @@ private:
 
 template<class Allocator>
 string_type<Allocator>
-view::
+url_view::
 params_type::
 at( string_view key,
     Allocator const& a) const
@@ -199,7 +199,7 @@ at( string_view key,
 //----------------------------------------------------------
 
 auto
-view::
+url_view::
 segments() const noexcept ->
     segments_type
 {
@@ -207,7 +207,7 @@ segments() const noexcept ->
 }
 
 auto
-view::
+url_view::
 params() const noexcept ->
     params_type
 {

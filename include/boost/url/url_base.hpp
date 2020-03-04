@@ -45,8 +45,8 @@ namespace urls {
 */
 class url_base
 {
-    friend class view::segments_type;
-    friend class view::params_type;
+    friend class url_view::segments_type;
+    friend class url_view::params_type;
 
     detail::storage& a_;
     detail::parts pt_;
@@ -1117,10 +1117,10 @@ public:
 
         No-throw guarantee.
 
-        @see view::segments_type
+        @see url_view::segments_type
     */
     inline
-    view::segments_type
+    url_view::segments_type
     segments() const noexcept;
 
     /** Return the path.
@@ -1357,10 +1357,10 @@ public:
 
         No-throw guarantee.
 
-        @see view::params_type
+        @see url_view::params_type
     */
     inline
-    view::params_type
+    url_view::params_type
     params() const noexcept;
 
     /** Return the query.
@@ -1615,7 +1615,7 @@ private:
 
 //----------------------------------------------------------
 
-/** A read-only view to the path segments.
+/** A read-only url_view to the path segments.
 */
 class url_base::segments_type
 {
@@ -1724,7 +1724,7 @@ public:
 
 //----------------------------------------------------------
 
-/** A modifiable view to the URL query parameters.
+/** A modifiable url_view to the URL query parameters.
 */
 class url_base::params_type
 {

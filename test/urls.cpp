@@ -7,18 +7,5 @@
 // Official repository: https://github.com/vinniefalco/url
 //
 
-#ifndef BOOST_URL_URLS_HPP
-#define BOOST_URL_URLS_HPP
-
-#include <boost/url/config.hpp>
-#include <boost/url/url.hpp>
-#include <boost/url/url_view.hpp>
-
-namespace boost {
-
-using url = urls::url;
-using url_view = urls::url_view;
-
-} // boost
-
-#endif
+// Test that header file is self-contained.
+#include <boost/url/urls.hpp>

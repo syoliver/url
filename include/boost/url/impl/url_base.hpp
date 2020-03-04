@@ -13,7 +13,7 @@
 namespace boost {
 namespace urls {
 
-view::
+url_view::
 segments_type::
 segments_type(
     url_base const& v) noexcept
@@ -22,7 +22,7 @@ segments_type(
 {
 }
 
-view::
+url_view::
 params_type::
 params_type(
     url_base const& v) noexcept
@@ -217,9 +217,9 @@ at( string_view key,
 auto
 url_base::
 segments() const noexcept ->
-    view::segments_type
+    url_view::segments_type
 {
-    return view::segments_type(*this);
+    return url_view::segments_type(*this);
 }
 
 auto
@@ -233,9 +233,9 @@ segments() noexcept ->
 auto
 url_base::
 params() const noexcept ->
-    view::params_type
+    url_view::params_type
 {
-    return view::params_type(*this);
+    return url_view::params_type(*this);
 }
 
 auto

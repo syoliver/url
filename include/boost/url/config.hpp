@@ -24,7 +24,7 @@ using string_type =
 
 #ifndef BOOST_URL_STANDALONE
 
-/// The type of string view used by the library.
+/// The type of string url_view used by the library.
 using string_view = boost::string_view;
 
 /// The type of error code used by the library.

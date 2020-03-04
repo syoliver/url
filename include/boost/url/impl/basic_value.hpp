@@ -11,7 +11,7 @@
 #define BOOST_URL_IMPL_BASIC_VALUE_HPP
 
 namespace boost {
-namespace url {
+namespace urls {
 
 view::
 segments_type::
@@ -246,7 +246,7 @@ params() noexcept ->
     return params_type(*this);
 }
 
-} // url
+} // urls
 } // boost
 
 #endif

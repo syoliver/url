@@ -7,26 +7,39 @@
 // Official repository: https://github.com/vinniefalco/url
 //
 
-// Test that header file is self-contained.
-#include <boost/url/static_value.hpp>
-
 #include "test_suite.hpp"
 
 namespace boost {
 namespace urls {
 
-class static_value_test
+class url_view;
+
+class url_base;
+
+template<class Allocator>
+class basic_url;
+
+template<std::size_t N>
+class static_url;
+
+using url = basic_url<std::allocator<char>>;
+
+} // urls
+} // boost
+
+namespace boost {
+namespace urls {
+
+class sandbox_test
 {
 public:
-    //------------------------------------------------------
-
     void
     run()
     {
     }
 };
 
-TEST_SUITE(static_value_test, "boost.url.static_value");
+TEST_SUITE(sandbox_test, "boost.url.sandbox");
 
 } // urls
 } // boost

@@ -13,7 +13,7 @@
 #include <boost/url/config.hpp>
 
 namespace boost {
-namespace url {
+namespace urls {
 
 /** Identifies the type of host in a URL.
 
@@ -46,7 +46,7 @@ enum class host_type
     ipvfuture
 };
 
-} // url
+} // urls
 } // boost
 
 #endif

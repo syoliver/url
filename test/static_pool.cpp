@@ -15,7 +15,7 @@
 #include <iostream>
 
 namespace boost {
-namespace url {
+namespace urls {
 
 class static_pool_test
 {
@@ -28,5 +28,5 @@ public:
 
 TEST_SUITE(static_pool_test, "boost.url.static_pool");
 
-} // url
+} // urls
 } // boost

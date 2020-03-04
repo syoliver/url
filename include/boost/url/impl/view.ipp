@@ -15,7 +15,7 @@
 #include <boost/url/detail/parse.hpp>
 
 namespace boost {
-namespace url {
+namespace urls {
 
 view::
 view(string_view s)
@@ -753,7 +753,7 @@ operator[](string_view key) const
     return it->value();
 }
 
-} // url
+} // urls
 } // boost
 
 #endif

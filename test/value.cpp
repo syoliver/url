@@ -15,7 +15,7 @@
 #include "test_suite.hpp"
 
 namespace boost {
-namespace url {
+namespace urls {
 
 class value_test
 {
@@ -830,5 +830,5 @@ public:
 
 TEST_SUITE(value_test, "boost.url.value");
 
-} // url
+} // urls
 } // boost

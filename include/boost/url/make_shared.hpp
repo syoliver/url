@@ -20,7 +20,7 @@
 
 namespace boost {
 namespace beast {
-namespace url {
+namespace urls {
 
 namespace detail {
 
@@ -171,7 +171,7 @@ make_shared(
     return p;
 }
 
-} // url
+} // urls
 } // beast
 } // boost
 

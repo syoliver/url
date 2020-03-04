@@ -11,7 +11,7 @@
 #define BOOST_URL_IMPL_VIEW_HPP
 
 namespace boost {
-namespace url {
+namespace urls {
 
 //----------------------------------------------------------
 
@@ -214,7 +214,7 @@ params() const noexcept ->
     return params_type(*this);
 }
 
-} // url
+} // urls
 } // boost
 
 #endif

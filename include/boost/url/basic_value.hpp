@@ -20,7 +20,7 @@
 #include <utility>
 
 namespace boost {
-namespace url {
+namespace urls {
 
 /** A modifiable container for a URL.
 
@@ -712,7 +712,7 @@ public:
 
         No-throw guarantee.
     */
-    url::host_type
+    urls::host_type
     host_type() const noexcept
     {
         return pt_.host;
@@ -760,7 +760,7 @@ public:
     host(
         Allocator const& a = {}) const
     {
-        if(pt_.host != url::host_type::name)
+        if(pt_.host != urls::host_type::name)
         {
             auto const s =  pt_.get(
                 detail::id_host, s_);
@@ -1910,7 +1910,7 @@ public:
     }
 };
 
-} // url
+} // urls
 } // boost
 
 #include <boost/url/impl/basic_value.hpp>

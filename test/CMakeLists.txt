@@ -28,6 +28,7 @@ add_executable (url-tests
     basic_value.cpp
     error.cpp
     host_type.cpp
+    sandbox.cpp
     scheme.cpp
     static_pool.cpp
     static_value.cpp

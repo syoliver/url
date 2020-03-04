@@ -16,7 +16,7 @@
 #include <utility>
 
 namespace boost {
-namespace url {
+namespace urls {
 
 namespace detail {
 
@@ -89,7 +89,7 @@ public:
 using value = dynamic_value<
     std::allocator<char>>;
 
-} // url
+} // urls
 } // boost
 
 #endif

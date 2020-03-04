@@ -17,7 +17,7 @@
 #include <stdexcept>
 
 namespace boost {
-namespace url {
+namespace urls {
 
 //----------------------------------------------------------
 
@@ -698,8 +698,8 @@ set_host(
     detail::parts pt;
     detail::parse_plain_hostname(pt, s);
     BOOST_ASSERT(
-        pt.host != url::host_type::none);
-    if(pt.host != url::host_type::name)
+        pt.host != urls::host_type::none);
+    if(pt.host != urls::host_type::name)
     {
         if(! has_authority())
         {
@@ -1691,7 +1691,7 @@ resize(
     return s_ + pt_.offset[first];
 }
 
-} // url
+} // urls
 } // boost
 
 #endif

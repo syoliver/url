@@ -15,7 +15,7 @@
 #include <memory>
 
 namespace boost {
-namespace url {
+namespace urls {
 namespace detail {
 
 struct storage
@@ -92,7 +92,7 @@ public:
 };
 
 } // detail
-} // url
+} // urls
 } // boost
 
 #endif

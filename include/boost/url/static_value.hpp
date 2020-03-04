@@ -16,7 +16,7 @@
 #include <utility>
 
 namespace boost {
-namespace url {
+namespace urls {
 
 template<std::size_t N>
 class static_value
@@ -46,7 +46,7 @@ public:
     }
 };
 
-} // url
+} // urls
 } // boost
 
 #endif

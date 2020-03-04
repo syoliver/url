@@ -7,7 +7,8 @@
 # Official repository: https://github.com/vinniefalco/url
 #
 
-source_group (url FILES ${PROJECT_SOURCE_DIR}/include/boost/url.hpp)
+source_group (boost FILES ${PROJECT_SOURCE_DIR}/include/boost/url.hpp)
+source_group (_lib FILES ${PROJECT_SOURCE_DIR}/src/src.cpp)
 source_group (TREE ${PROJECT_SOURCE_DIR}/include/boost/url PREFIX url FILES ${PROJECT_FILES})
 
 GroupSources(test "/")

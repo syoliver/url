@@ -7,8 +7,8 @@
 // Official repository: https://github.com/vinniefalco/url
 //
 
-#ifndef BOOST_URL_IMPL_VIEW_HPP
-#define BOOST_URL_IMPL_VIEW_HPP
+#ifndef BOOST_URL_IMPL_URL_VIEW_HPP
+#define BOOST_URL_IMPL_URL_VIEW_HPP
 
 namespace boost {
 namespace urls {

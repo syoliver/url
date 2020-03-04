@@ -7,8 +7,8 @@
 // Official repository: https://github.com/vinniefalco/url
 //
 
-#ifndef BOOST_URL_VIEW_HPP
-#define BOOST_URL_VIEW_HPP
+#ifndef BOOST_URL_URL_VIEW_HPP
+#define BOOST_URL_URL_VIEW_HPP
 
 #include <boost/url/config.hpp>
 #include <boost/url/detail/parts.hpp>
@@ -838,9 +838,9 @@ public:
 } // urls
 } // boost
 
-#include <boost/url/impl/view.hpp>
+#include <boost/url/impl/url_view.hpp>
 #ifdef BOOST_URL_HEADER_ONLY
-#include <boost/url/impl/view.ipp>
+#include <boost/url/impl/url_view.ipp>
 #endif
 
 #endif

@@ -10,7 +10,7 @@
 #ifndef BOOST_URL_MAKE_SHARED_HPP
 #define BOOST_URL_MAKE_SHARED_HPP
 
-#include <boost/beast/url/view.hpp>
+#include <boost/beast/url/url_view.hpp>
 #include <boost/beast/core/detail/allocator.hpp>
 #include <boost/beast/core/detail/empty_base_optimization.hpp>
 #include <boost/assert.hpp>

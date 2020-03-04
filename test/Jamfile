@@ -34,7 +34,7 @@ local SOURCES =
     static_pool.cpp
     static_value.cpp
     value.cpp
-    view.cpp
+    url_view.cpp
     ;
 
 local LIMIT_SOURCES =

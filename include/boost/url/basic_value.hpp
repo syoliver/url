@@ -11,7 +11,7 @@
 #define BOOST_URL_BASIC_VALUE_HPP
 
 #include <boost/url/config.hpp>
-#include <boost/url/view.hpp>
+#include <boost/url/url_view.hpp>
 #include <boost/url/detail/char_type.hpp>
 #include <boost/url/detail/parts.hpp>
 #include <boost/url/detail/storage.hpp>

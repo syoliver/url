@@ -7,10 +7,10 @@
 // Official repository: https://github.com/vinniefalco/url
 //
 
-#ifndef BOOST_URL_IMPL_VIEW_IPP
-#define BOOST_URL_IMPL_VIEW_IPP
+#ifndef BOOST_URL_IMPL_URL_VIEW_IPP
+#define BOOST_URL_IMPL_URL_VIEW_IPP
 
-#include <boost/url/view.hpp>
+#include <boost/url/url_view.hpp>
 #include <boost/url/error.hpp>
 #include <boost/url/detail/parse.hpp>
 

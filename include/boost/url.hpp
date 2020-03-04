@@ -17,6 +17,6 @@
 #include <boost/url/host_type.hpp>
 #include <boost/url/scheme.hpp>
 #include <boost/url/static_pool.hpp>
-#include <boost/url/view.hpp>
+#include <boost/url/url_view.hpp>
 
 #endif

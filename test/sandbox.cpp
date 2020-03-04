@@ -9,6 +9,7 @@
 
 #include "test_suite.hpp"
 
+#if 0
 namespace boost {
 namespace urls {
 
@@ -26,6 +27,7 @@ using url = basic_url<std::allocator<char>>;
 
 } // urls
 } // boost
+#endif
 
 namespace boost {
 namespace urls {

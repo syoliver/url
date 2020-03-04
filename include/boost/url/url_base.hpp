@@ -39,7 +39,7 @@ namespace urls {
     @li Functions which throw offer the strong
     exception safety guarantee.
 
-    @see value, dynamic_value, static_url
+    @see value, basic_url, static_url
 
     @see @li <a href="https://tools.ietf.org/html/rfc3986">Uniform Resource Identifier (URI): Generic Syntax</a>
 */
@@ -54,7 +54,7 @@ class url_base
 
 private:
     template<class Allocator>
-    friend class dynamic_value;
+    friend class basic_url;
 
     template<std::size_t>
     friend class static_url;

@@ -8,7 +8,7 @@
 //
 
 // Test that header file is self-contained.
-#include <boost/url/value.hpp>
+#include <boost/url/basic_url.hpp>
 
 #include <boost/url/static_pool.hpp>
 

@@ -26,6 +26,7 @@ add_executable (url-tests
     test_suite.hpp
     _detail_char_type.cpp
     _detail_parse.cpp
+    basic_url.cpp
     error.cpp
     host_type.cpp
     sandbox.cpp

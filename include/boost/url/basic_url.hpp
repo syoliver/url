@@ -7,8 +7,8 @@
 // Official repository: https://github.com/vinniefalco/url
 //
 
-#ifndef BOOST_URL_VALUE_HPP
-#define BOOST_URL_VALUE_HPP
+#ifndef BOOST_URL_BASIC_URL_HPP
+#define BOOST_URL_BASIC_URL_HPP
 
 #include <boost/url/config.hpp>
 #include <boost/url/url_base.hpp>
@@ -36,12 +36,12 @@ struct storage_member
 } // detail
 
 template<class Allocator>
-class dynamic_value
+class basic_url
     : private detail::storage_member<Allocator>
     , public url_base
 {
 public:
-    dynamic_value() noexcept
+    basic_url() noexcept
         : detail::storage_member<
             Allocator>(Allocator{})
         , url_base(static_cast<
@@ -50,7 +50,7 @@ public:
     }
 
     explicit
-    dynamic_value(
+    basic_url(
         string_view s,
         Allocator const& a = {})
         : detail::storage_member<
@@ -60,7 +60,7 @@ public:
     }
 
     explicit
-    dynamic_value(
+    basic_url(
         Allocator const& a) noexcept
         : detail::storage_member<
             Allocator>(a)
@@ -68,25 +68,25 @@ public:
     {
     }
 
-    dynamic_value(
-        dynamic_value&&) noexcept
+    basic_url(
+        basic_url&&) noexcept
     {
     }
 
-    dynamic_value(
-        dynamic_value const&)
+    basic_url(
+        basic_url const&)
     {
     }
 
-    dynamic_value&
+    basic_url&
     operator=(
-        dynamic_value const&)
+        basic_url const&)
     {
         return *this;
     }
 };
 
-using value = dynamic_value<
+using value = basic_url<
     std::allocator<char>>;
 
 } // urls

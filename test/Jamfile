@@ -27,6 +27,7 @@ else
 local SOURCES =
     _detail_char_type.cpp
     _detail_parse.cpp
+    basic_url.cpp
     error.cpp
     host_type.cpp
     scheme.cpp

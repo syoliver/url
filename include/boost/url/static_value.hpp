@@ -11,7 +11,7 @@
 #define BOOST_URL_STATIC_VALUE_HPP
 
 #include <boost/url/config.hpp>
-#include <boost/url/basic_value.hpp>
+#include <boost/url/url_base.hpp>
 #include <cstdlib>
 #include <utility>
 
@@ -20,7 +20,7 @@ namespace urls {
 
 template<std::size_t N>
 class static_value
-    : public basic_value
+    : public url_base
 {
     char buf_[N + 1];
 
@@ -28,7 +28,7 @@ public:
     template<class... Args>
     explicit
     static_value(Args&&... args)
-        : basic_value(
+        : url_base(
             std::forward<Args>(args)...)
     {
     }

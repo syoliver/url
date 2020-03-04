@@ -25,15 +25,15 @@ add_executable (url-tests
     test_suite.hpp
     _detail_char_type.cpp
     _detail_parse.cpp
-    basic_value.cpp
     error.cpp
     host_type.cpp
     sandbox.cpp
     scheme.cpp
     static_pool.cpp
     static_value.cpp
-    value.cpp
+    url_base.cpp
     url_view.cpp
+    value.cpp
 )
 
 add_test(url-tests url-tests)

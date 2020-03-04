@@ -7,8 +7,8 @@
 // Official repository: https://github.com/vinniefalco/url
 //
 
-#ifndef BOOST_URL_IMPL_BASIC_VALUE_HPP
-#define BOOST_URL_IMPL_BASIC_VALUE_HPP
+#ifndef BOOST_URL_IMPL_URL_BASE_HPP
+#define BOOST_URL_IMPL_URL_BASE_HPP
 
 namespace boost {
 namespace urls {
@@ -16,7 +16,7 @@ namespace urls {
 view::
 segments_type::
 segments_type(
-    basic_value const& v) noexcept
+    url_base const& v) noexcept
     : s_(v.s_)
     , pt_(&v.pt_)
 {
@@ -25,7 +25,7 @@ segments_type(
 view::
 params_type::
 params_type(
-    basic_value const& v) noexcept
+    url_base const& v) noexcept
     : s_(v.s_)
     , pt_(&v.pt_)
 {
@@ -33,17 +33,17 @@ params_type(
 
 //----------------------------------------------------------
 
-class basic_value::segments_type::iterator
+class url_base::segments_type::iterator
 {
     friend segments_type;
 
-    basic_value* v_;
+    url_base* v_;
     std::size_t off_;
     std::size_t n_;
 
     BOOST_URL_DECL
     iterator(
-        basic_value* v,
+        url_base* v,
         bool end) noexcept;
 
 public:
@@ -115,18 +115,18 @@ private:
 
 //----------------------------------------------------------
 
-class basic_value::params_type::iterator
+class url_base::params_type::iterator
 {
     friend params_type;
 
-    basic_value* v_;
+    url_base* v_;
     std::size_t off_;
     std::size_t nk_;
     std::size_t nv_;
 
     BOOST_URL_DECL
     iterator(
-        basic_value* v,
+        url_base* v,
         bool end) noexcept;
 
 public:
@@ -201,7 +201,7 @@ private:
 
 template<class Allocator>
 string_type<Allocator>
-basic_value::
+url_base::
 params_type::
 at( string_view key,
     Allocator const& a) const
@@ -215,7 +215,7 @@ at( string_view key,
 //----------------------------------------------------------
 
 auto
-basic_value::
+url_base::
 segments() const noexcept ->
     view::segments_type
 {
@@ -223,7 +223,7 @@ segments() const noexcept ->
 }
 
 auto
-basic_value::
+url_base::
 segments() noexcept ->
     segments_type
 {
@@ -231,7 +231,7 @@ segments() noexcept ->
 }
 
 auto
-basic_value::
+url_base::
 params() const noexcept ->
     view::params_type
 {
@@ -239,7 +239,7 @@ params() const noexcept ->
 }
 
 auto
-basic_value::
+url_base::
 params() noexcept ->
     params_type
 {

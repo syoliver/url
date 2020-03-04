@@ -11,7 +11,7 @@
 #define BOOST_URL_VALUE_HPP
 
 #include <boost/url/config.hpp>
-#include <boost/url/basic_value.hpp>
+#include <boost/url/url_base.hpp>
 #include <boost/url/detail/storage.hpp>
 #include <utility>
 
@@ -38,13 +38,13 @@ struct storage_member
 template<class Allocator>
 class dynamic_value
     : private detail::storage_member<Allocator>
-    , public basic_value
+    , public url_base
 {
 public:
     dynamic_value() noexcept
         : detail::storage_member<
             Allocator>(Allocator{})
-        , basic_value(static_cast<
+        , url_base(static_cast<
             detail::storage&>(this->st_))
     {
     }
@@ -55,7 +55,7 @@ public:
         Allocator const& a = {})
         : detail::storage_member<
             Allocator>(a)
-        , basic_value(this->st_, s)
+        , url_base(this->st_, s)
     {
     }
 
@@ -64,7 +64,7 @@ public:
         Allocator const& a) noexcept
         : detail::storage_member<
             Allocator>(a)
-        , basic_value(this->st_)
+        , url_base(this->st_)
     {
     }
 
